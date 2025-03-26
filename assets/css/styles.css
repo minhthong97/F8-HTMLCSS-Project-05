@@ -1043,6 +1043,14 @@ mark {
     text-align: center;
 }
 
+.app__label,
+.app__heading,
+.app__desc,
+.app__cta {
+    position: relative;
+    z-index: 2;
+}
+
 .app__label {
     color: #fff;
 }
@@ -1070,7 +1078,6 @@ mark {
 }
 
 .app__cta {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1078,7 +1085,6 @@ mark {
     height: 64px;
     border-radius: 8px;
     background: #fff;
-    z-index: 1;
 }
 
 .app__decor {
