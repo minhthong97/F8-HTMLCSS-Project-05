@@ -17,6 +17,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: var(--primary-font);
+    overflow-x: hidden;
 }
 
 html,
@@ -103,17 +104,17 @@ button {
     font-weight: 700;
 }
 
-.section-heading.lv1 {
+.section-heading--lv1 {
     font-size: 6rem;
     line-height: 1.17;
 }
 
-.section-heading.lv2 {
+.section-heading--lv2 {
     font-size: 4rem;
     line-height: 1.25;
 }
 
-.section-heading.lv3 {
+.section-heading--lv3 {
     font-size: 2.2rem;
     font-weight: 600;
     line-height: 1.45;
@@ -1069,6 +1070,7 @@ mark {
 }
 
 .app__cta {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1076,10 +1078,12 @@ mark {
     height: 64px;
     border-radius: 8px;
     background: #fff;
+    z-index: 1;
 }
 
 .app__decor {
     position: absolute;
+    z-index: 0;
     color: #8578df;
 }
 
